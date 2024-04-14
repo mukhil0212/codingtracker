@@ -1,4 +1,12 @@
+# Netlify configuration
+[build]
+  # Since everything is in the root, no 'publish' directory is needed here.
+  # If your 'index.html' is in the root, Netlify will deploy it as is.
+
+# Redirects and rewrites
 [[redirects]]
+  # Redirect all requests to the main index.html file
+  # This is useful for single-page applications (SPAs) or similar setups.
   from = "/*"
   to = "/index.html"
   status = 200
