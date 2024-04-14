@@ -1,7 +1,14 @@
+// Save the status of the checkbox to LocalStorage when changed
 function updateStatus(index, checkboxElement) {
-    // Assuming local storage will be used to store the status
     const problemStatus = JSON.parse(localStorage.getItem('problemStatus') || '{}');
-    problemStatus[index] = checkboxElement.checked ? 'Completed' : '';
+    problemStatus[index] = checkboxElement.checked ? 'Completed' : 'Not Completed';
     localStorage.setItem('problemStatus', JSON.stringify(problemStatus));
-    // Update UI or send data to server as needed
 }
+
+// When the DOM is fully loaded, restore the checkbox status from LocalStorage
+document.addEventListener('DOMContentLoaded', function () {
+    const problemStatus = JSON.parse(localStorage.getItem('problemStatus') || '{}');
+    document.querySelectorAll('input[type="checkbox"]').forEach(function (checkbox, index) {
+        checkbox.checked = problemStatus[index] === 'Completed';
+    });
+});
