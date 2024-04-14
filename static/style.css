@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2a2a2b; /* Dark background for the overall page */
+}
+
+h1 {
+    color: #d3b9ff; /* Light purple for the header */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0;
+    background-color: #151515; /* Dark header background */
+}
+h2 {
+    color: #c0a2ff; /* Slightly different shade of purple for distinction */
+    text-align: center;
+    margin: 10px 0;
+    font-size: 24px;
+}
+form {
+    width: 80%;
+    margin: auto;
+    color: #fff; /* Text color for form */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #5e42a6; /* Purple header */
+    color: white;
+}
+
+th, td {
+    border: 1px solid #444; /* Dark borders for readability */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    height: 50px;
+}
+
+td {
+    background-color: #1f1f1f; /* Dark cells for contrast */
+    color: #d3b9ff; /* Light purple text for table data */
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #5e42a6; /* Purple button */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a318c; /* Darker purple on hover */
+}
